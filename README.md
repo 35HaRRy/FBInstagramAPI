@@ -1,13 +1,22 @@
 # FBInstagramAPI
 
-## Summary
-A console tool that reads a Facebook or Instagram access token and prints posts and media URLs from the Graph APIs.
+## Overview
+A small console utility that reads a Facebook or Instagram access token and prints posts or media URLs from the Graph APIs.
+It is intended as a lightweight way to inspect account content from the command line.
 
 ## Dependencies
 - .NET Core 3.1 SDK/runtime
+- ASP.NET Core shared framework components
+- `System.ServiceModel.Syndication`
 
 ## Setup
 1. Install the .NET Core 3.1 SDK/runtime.
-2. Open `FBInstagramAPI.sln` or restore with `dotnet restore`.
-3. Run the console app with `dotnet run`.
-4. Follow the prompts to choose the API type and enter your access token.
+2. Restore the project with `dotnet restore`.
+3. Review the source if you want to adjust the API endpoint or output format.
+
+## Run
+- Start the console app with `dotnet run`.
+- Choose the API type and provide the access token when prompted.
+
+## Notes
+The app uses the Facebook and Instagram Graph APIs directly, so valid tokens and permissions are required.
